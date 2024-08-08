@@ -1,7 +1,7 @@
 const palindromes = function (word) {
     word = word
-                .replace(/[^\w\s]|_/g, "")
-                .toLowerCase();
+                .toLowerCase()
+                .replace(/[\W_]/g, "");
 
     let reversed = word
                         .split("")
