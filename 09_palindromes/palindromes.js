@@ -1,8 +1,8 @@
 const palindromes = function (word) {
+    word = word.replace(/[^\w\s]|_/g, "");
     let reversed = word.split("").reverse().join("");
-    if (reversed === word) {
-        return true;
-    }
+
+    return reversed === word;
 };
 
 // Do not edit below this line
